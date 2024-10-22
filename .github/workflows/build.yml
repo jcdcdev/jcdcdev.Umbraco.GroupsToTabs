@@ -1,0 +1,17 @@
+name: 🏗️ Build
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        uses: jcdcdev/jcdcdev.Umbraco.Github.Build@main
+        with:
+          project-name: jcdcdev.Umbraco.GroupsToTabs
+          project-path: src/jcdcdev.Umbraco.GroupsToTabs/jcdcdev.Umbraco.GroupsToTabs.csproj
+          npm-working-dir: src/jcdcdev.Umbraco.GroupsToTabs.Client
+          npm-enabled: true
+          umbraco-version: 15
+          dotnet-version: "9"

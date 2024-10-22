@@ -19,7 +19,7 @@ public class PackageManifestReader : IPackageManifestReader
             Extensions = []
         };
 
-        extensions.Add(new EntryPointManifest
+        extensions.Add(new BackofficeEntryPointManifest()
         {
             Name = "groups-to-tabs.entrypoint",
             Alias = "groups-to-tabs.entrypoint",

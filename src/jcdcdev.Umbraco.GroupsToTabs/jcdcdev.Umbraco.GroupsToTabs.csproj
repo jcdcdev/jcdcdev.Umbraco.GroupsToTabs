@@ -28,7 +28,7 @@
         <PackageReference Include="Umbraco.Cms.Core" Version="15.0.0-rc2" />
         <PackageReference Include="Umbraco.Cms.Web.Website" Version="15.0.0-rc2" />
         <PackageReference Include="Umbraco.Cms.Infrastructure" Version="15.0.0-rc2" />
-        <PackageReference Include="jcdcdev.Umbraco.Core" Version="15.2024.1021-alpha-1831-29" />
+        <PackageReference Include="jcdcdev.Umbraco.Core" Version="15.0.0-alpha0005" />
     </ItemGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Debug'">

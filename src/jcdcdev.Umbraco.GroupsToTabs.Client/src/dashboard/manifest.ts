@@ -1,4 +1,4 @@
-﻿import {ManifestDashboard} from "@umbraco-cms/backoffice/dashboard";
+﻿import { ManifestDashboard } from "@umbraco-cms/backoffice/extension-registry";
 
 export const manifests: Array<ManifestDashboard> = [
     {
@@ -15,7 +15,6 @@ export const manifests: Array<ManifestDashboard> = [
         conditions: [
             {
                 alias: "Umb.Condition.SectionAlias",
-                // @ts-ignore
                 match: "Umb.Section.Settings",
             }
         ]

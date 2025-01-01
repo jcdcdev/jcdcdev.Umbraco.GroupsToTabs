@@ -13,9 +13,9 @@ public class ConfigApiSwaggerGenOptions : IConfigureOptions<SwaggerGenOptions>
         options.SwaggerDoc(Constants.Api.ApiName,
             new OpenApiInfo
             {
-                Title = "Groups to Tabs Api",
+                Title = Constants.Api.Title,
                 Version = "Latest",
-                Description = "API for Groups to Tabs"
+                Description = Constants.Api.Description
             });
     }
 }

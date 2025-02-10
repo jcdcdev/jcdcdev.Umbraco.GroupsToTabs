@@ -11,10 +11,12 @@ import type { GetUmbracoGroupsToTabsApiV1StartByTypeData, GetUmbracoGroupsToTabs
  * @returns unknown OK
  * @throws ApiError
  */
-export const getUmbracoGroupsToTabsApiV1StartByType = (data: GetUmbracoGroupsToTabsApiV1StartByTypeData): CancelablePromise<GetUmbracoGroupsToTabsApiV1StartByTypeResponse> => { return __request(OpenAPI, {
-    method: 'GET',
-    url: '/umbraco/GroupsToTabs/api/v1/start/{type}',
-    path: {
-        type: data.type
-    }
-}); };
+export const getUmbracoGroupsToTabsApiV1StartByType = (data: GetUmbracoGroupsToTabsApiV1StartByTypeData): CancelablePromise<GetUmbracoGroupsToTabsApiV1StartByTypeResponse> => {
+    return __request(OpenAPI, {
+        method: 'GET',
+        url: '/umbraco/GroupsToTabs/api/v1/start/{type}',
+        path: {
+            type: data.type
+        }
+    });
+};

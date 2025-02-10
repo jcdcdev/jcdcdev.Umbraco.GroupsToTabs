@@ -112,6 +112,31 @@ branches:
     is-release-branch: false
     is-mainline: false
     pre-release-weight: 0
+  main:
+    regex: ^main$
+    mode: ContinuousDelivery
+    tag: ""
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: false
+    source-branches: ["develop"]
+    tracks-release-branches: false
+    is-release-branch: false
+    is-mainline: true
+    pre-release-weight: 55000
+  develop:
+    regex: ^dev$
+    mode: ContinuousDeployment
+    tag: alpha
+    increment: Patch
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
+    source-branches: []
+    is-source-branch-for: ["main"]
+    tracks-release-branches: true
+    is-release-branch: false
+    is-mainline: false
+    pre-release-weight: 0
   version-develop-12:
     regex: ^dev/v12$
     mode: ContinuousDeployment

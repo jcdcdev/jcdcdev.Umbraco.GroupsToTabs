@@ -1,42 +1,6 @@
 ignore:
   commits-before: 2024-10-23T00:00:00
 branches:
-  main:
-    regex: ^master$|^main$
-    mode: ContinuousDelivery
-    tag: ""
-    increment: Patch
-    prevent-increment-of-merged-branch-version: true
-    track-merge-target: false
-    source-branches: ["develop", "release"]
-    tracks-release-branches: false
-    is-release-branch: false
-    is-mainline: true
-    pre-release-weight: 55000
-  develop:
-    regex: ^dev(elop)?(ment)?$
-    mode: ContinuousDeployment
-    tag: alpha
-    increment: Minor
-    prevent-increment-of-merged-branch-version: false
-    track-merge-target: true
-    source-branches: []
-    tracks-release-branches: true
-    is-release-branch: false
-    is-mainline: false
-    pre-release-weight: 0
-  release:
-    regex: ^releases?[/-]
-    mode: ContinuousDelivery
-    tag: beta
-    increment: None
-    prevent-increment-of-merged-branch-version: true
-    track-merge-target: false
-    source-branches: ["develop", "main", "support", "release"]
-    tracks-release-branches: false
-    is-release-branch: true
-    is-mainline: false
-    pre-release-weight: 30000
   feature:
     regex: ^features?[/-]
     mode: ContinuousDelivery
@@ -44,22 +8,20 @@ branches:
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
-    source-branches:
-      ["develop", "main", "release", "feature", "support", "hotfix"]
+    source-branches: ["version-develop-10","version-develop-13","version-develop-14","version-develop-15","version-develop-16","version-develop-17","version-develop-18","version-develop-19","version-develop-20","version-develop-10","version-13","version-14","version-15","version-16","version-17","version-18","version-19","version-20"]
     tracks-release-branches: false
     is-release-branch: false
     is-mainline: false
     pre-release-weight: 30000
   pull-request:
-    regex: ^(pull|pull\-requests|pr)[/-]
+    regex: ^(refs/pull*|pull|pull\-requests|pr)[/-]
     mode: ContinuousDelivery
     tag: PullRequest
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
     tag-number-pattern: '[/-](?<number>\d+)[-/]'
     track-merge-target: false
-    source-branches:
-      ["develop", "main", "release", "feature", "support", "hotfix"]
+    source-branches: ["version-develop-10","version-develop-13","version-develop-14","version-develop-15","version-develop-16","version-develop-17","version-develop-18","version-develop-19","version-develop-20","version-develop-10","version-13","version-14","version-15","version-16","version-17","version-18","version-19","version-20"]
     tracks-release-branches: false
     is-release-branch: false
     is-mainline: false
@@ -71,23 +33,24 @@ branches:
     increment: Patch
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
-    source-branches: ["develop", "main", "support"]
+    source-branches: ["version-develop-10","version-develop-13","version-develop-14","version-develop-15","version-develop-16","version-develop-17","version-develop-18","version-develop-19","version-develop-20","version-develop-10","version-13","version-14","version-15","version-16","version-17","version-18","version-19","version-20"]
     tracks-release-branches: false
     is-release-branch: false
     is-mainline: false
     pre-release-weight: 30000
-  support:
-    regex: ^support[/-]
+  snyk:
+    regex: ^snyk*
     mode: ContinuousDelivery
-    tag: ""
-    increment: Patch
-    prevent-increment-of-merged-branch-version: true
+    tag: "snyk"
+    increment: Inherit
+    prevent-increment-of-merged-branch-version: false
+    tag-number-pattern: '[/-](?<number>\d+)[-/]'
     track-merge-target: false
-    source-branches: ["main"]
+    source-branches: ["version-develop-10","version-develop-13","version-develop-14","version-develop-15","version-develop-16","version-develop-17","version-develop-18","version-develop-19","version-develop-20","version-develop-10","version-13","version-14","version-15","version-16","version-17","version-18","version-19","version-20"]
     tracks-release-branches: false
     is-release-branch: false
-    is-mainline: true
-    pre-release-weight: 55000
+    is-mainline: false
+    pre-release-weight: 30000
   version-10:
     regex: ^v10$
     mode: ContinuousDelivery
@@ -145,6 +108,31 @@ branches:
     track-merge-target: true
     source-branches: []
     is-source-branch-for: ["version-10"]
+    tracks-release-branches: true
+    is-release-branch: false
+    is-mainline: false
+    pre-release-weight: 0
+  main:
+    regex: ^main$
+    mode: ContinuousDelivery
+    tag: ""
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: false
+    source-branches: ["develop"]
+    tracks-release-branches: false
+    is-release-branch: false
+    is-mainline: true
+    pre-release-weight: 55000
+  develop:
+    regex: ^dev$
+    mode: ContinuousDeployment
+    tag: alpha
+    increment: Patch
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
+    source-branches: []
+    is-source-branch-for: ["main"]
     tracks-release-branches: true
     is-release-branch: false
     is-mainline: false

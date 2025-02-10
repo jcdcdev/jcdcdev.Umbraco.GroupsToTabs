@@ -14,7 +14,7 @@ branches:
     is-mainline: false
     pre-release-weight: 30000
   pull-request:
-    regex: ^(pull|pull\-requests|pr)[/-]
+    regex: ^(refs/pull*|pull|pull\-requests|pr)[/-]
     mode: ContinuousDelivery
     tag: PullRequest
     increment: Inherit

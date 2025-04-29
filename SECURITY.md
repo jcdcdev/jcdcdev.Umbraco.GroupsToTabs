@@ -4,10 +4,11 @@
 
 The following table outlines the versions of the project that are currently supported with security updates:
 
-| Version                                                                  | Supported | Umbraco Version |
-| ------------------------------------------------------------------------ | --------- | --------------- |
-| [15.x](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/tree/v15) | ✅         | 15              |
-| [14.x](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/tree/v14) | ✅         | 14              |
+| Version                                                                            | Umbraco Version | Security Phase Start | End of Life |
+| ---------------------------------------------------------------------------------- | --------------- | -------------------- | ----------- |
+| [14.x](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/tree/v14) | 14 | 2025-03-02 | 2025-05-30 |
+| [15.x](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/tree/v15) | 15 | 2025-08-14 | 2025-11-14 |
+
 
 ## Future Support
 
@@ -20,7 +21,7 @@ Project maintainers plan to support all STS (Short-Term Support) and LTS (Long-T
 
 If you discover a vulnerability in this project, please follow one of these steps to report it:
 
-- Create an [issue](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/security/advisories/new) 
+- Create an [issue](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/security/advisories/new)
 - Contact the project author privately at [jcdc.dev/contact](https://jcdc.dev/contact)
 
 ### Details
@@ -34,18 +35,19 @@ Include as much information as possible about the vulnerability, including:
 
 ### Acknowledgment
 
-You will receive an acknowledgment of your report as soon as possible. 
+You will receive an acknowledgment of your report as soon as possible.
 
 > [!NOTE]
 > Response times may vary depending on other commitments.
 
 ### Resolution
 
-Once the vulnerability is confirmed, project maintainers will work to resolve it as quickly as possible. 
+Once the vulnerability is confirmed, project maintainers will work to resolve it as quickly as possible.
 
-You will be notified once the issue has been resolved or rejected. 
+You will be notified once the issue has been resolved or rejected.
 
 > [!TIP]
 > If the vulnerability is accepted, you will receive credit in the release notes.
 
 Thank you for helping to keep this project secure!
+

@@ -11,6 +11,11 @@ A simple Umbraco package that converts content type groups into tabs in the Umbr
 > [!NOTE]
 > This package was created to celebrate Hacktoberfest 2024! 🎉
 
+> [!IMPORTANT]
+> Version 14 will only receive security updates and no new features.
+
+> Please review the [security policy](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs?tab=security-ov-file#supported-versions) for more information.
+
 ## Quick Start
 
 ### Install Package

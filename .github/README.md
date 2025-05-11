@@ -11,6 +11,9 @@ A simple Umbraco package that converts content type groups into tabs in the Umbr
 > [!NOTE]
 > This package was created to celebrate Hacktoberfest 2024! 🎉
 
+> [!NOTE]
+> Version 16 is not released yet.
+
 ## Quick Start
 
 ### Install Package

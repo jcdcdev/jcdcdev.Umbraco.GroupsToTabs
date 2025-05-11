@@ -2,9 +2,12 @@
 
 ## Supported Versions
 
-The following table outlines the versions of the project that are currently supported with security updates:
+The following table outlines the versions of the project that are currently supported with security & feature updates:
 
-| Version                                                                            | Umbraco Version | Security Phase Start | End of Life |
+> [!NOTE]
+> Once a version starts its security phase, it will no longer receive feature updates. Only critical bug fixes and security updates will be provided.
+
+| Package Version                                                                            | Umbraco Version | Security Phase Start | End of Life |
 | ---------------------------------------------------------------------------------- | --------------- | -------------------- | ----------- |
 | [14.x](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/tree/v14) | 14 | 2025-03-02 | 2025-05-30 |
 | [15.x](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs/tree/v15) | 15 | 2025-08-14 | 2025-11-14 |
@@ -31,7 +34,6 @@ Include as much information as possible about the vulnerability, including:
 - Steps to reproduce
 - Potential impact
 - Any suggested fixes
-
 
 ### Acknowledgment
 

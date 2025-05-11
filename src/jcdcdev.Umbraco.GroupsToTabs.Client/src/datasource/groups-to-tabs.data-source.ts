@@ -1,10 +1,8 @@
 ﻿import {UmbControllerHost} from "@umbraco-cms/backoffice/controller-api";
 import {UmbDataSourceResponse} from "@umbraco-cms/backoffice/repository";
-import {tryExecuteAndNotify} from "@umbraco-cms/backoffice/resources";
+import {tryExecute} from "@umbraco-cms/backoffice/resources";
 import {
-    getUmbracoGroupsToTabsApiV1StartByType,
-    GetUmbracoGroupsToTabsApiV1StartByTypeData,
-    type GetUmbracoGroupsToTabsApiV1StartByTypeResponse
+    type GetUmbracoGroupsToTabsApiV1StartByTypeResponse, GroupsToTabsService
 } from "../api";
 
 export interface IGroupsToTabsDataSource {
@@ -20,11 +18,6 @@ export class GroupsToTabsDataSource implements IGroupsToTabsDataSource {
     }
 
     async getUmbracoGroupsToTabsApiV1Start(type: string): Promise<UmbDataSourceResponse<GetUmbracoGroupsToTabsApiV1StartByTypeResponse>> {
-        const data: GetUmbracoGroupsToTabsApiV1StartByTypeData =
-            {
-                type: type
-            };
-
-        return await tryExecuteAndNotify(this.#host, getUmbracoGroupsToTabsApiV1StartByType(data))
+        return await tryExecute(this.#host, GroupsToTabsService.getUmbracoGroupsToTabsApiV1StartByType({path: {type: type}}))
     }
 }

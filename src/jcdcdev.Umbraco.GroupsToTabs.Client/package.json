@@ -9,10 +9,9 @@
 		"preview": "vite preview",
 		"generate": "openapi-ts"
 	},
-	"dependencies": {
-		"lit": "^3.3.0"
-	},
 	"devDependencies": {
+		"lit": "^3.3.0",
+        "@hey-api/client-fetch": "^0.10.0",
 		"@hey-api/openapi-ts": "^0.67.3",
 		"@umbraco-cms/backoffice": "^16.0.0-rc",
 		"typescript": "^5.8.3",

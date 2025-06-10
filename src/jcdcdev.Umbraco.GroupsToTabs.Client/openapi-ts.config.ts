@@ -1,7 +1,7 @@
 import { defineConfig, defaultPlugins } from '@hey-api/openapi-ts';
 
 export default defineConfig({
-    input: 'http://localhost:54813/umbraco/swagger/GroupsToTabs/swagger.json',
+    input: 'http://localhost:54888/umbraco/swagger/GroupsToTabs/swagger.json',
     plugins: [
         ...defaultPlugins,
         {

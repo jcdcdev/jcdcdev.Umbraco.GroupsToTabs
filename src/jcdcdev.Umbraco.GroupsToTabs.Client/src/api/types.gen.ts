@@ -24,5 +24,5 @@ export type GetUmbracoGroupsToTabsApiV1StartByTypeResponses = {
 export type GetUmbracoGroupsToTabsApiV1StartByTypeResponse = GetUmbracoGroupsToTabsApiV1StartByTypeResponses[keyof GetUmbracoGroupsToTabsApiV1StartByTypeResponses];
 
 export type ClientOptions = {
-    baseUrl: 'http://localhost:54813' | (string & {});
+    baseUrl: 'http://localhost:54888' | (string & {});
 };

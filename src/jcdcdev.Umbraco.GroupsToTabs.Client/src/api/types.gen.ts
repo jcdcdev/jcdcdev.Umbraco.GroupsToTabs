@@ -6,7 +6,23 @@ export type GroupsToTabsResponse = {
 };
 
 export type GetUmbracoGroupsToTabsApiV1StartByTypeData = {
-    type: string;
+    body?: never;
+    path: {
+        type: string;
+    };
+    query?: never;
+    url: '/umbraco/GroupsToTabs/api/v1/start/{type}';
 };
 
-export type GetUmbracoGroupsToTabsApiV1StartByTypeResponse = ((GroupsToTabsResponse));
+export type GetUmbracoGroupsToTabsApiV1StartByTypeResponses = {
+    /**
+     * OK
+     */
+    200: GroupsToTabsResponse;
+};
+
+export type GetUmbracoGroupsToTabsApiV1StartByTypeResponse = GetUmbracoGroupsToTabsApiV1StartByTypeResponses[keyof GetUmbracoGroupsToTabsApiV1StartByTypeResponses];
+
+export type ClientOptions = {
+    baseUrl: 'http://localhost:54888' | (string & {});
+};

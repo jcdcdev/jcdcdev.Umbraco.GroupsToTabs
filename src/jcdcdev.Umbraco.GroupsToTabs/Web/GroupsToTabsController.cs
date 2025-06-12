@@ -3,18 +3,11 @@ using jcdcdev.Umbraco.GroupsToTabs.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using NPoco;
 using Umbraco.Cms.Api.Common.Attributes;
 using Umbraco.Cms.Api.Common.Filters;
-using Umbraco.Cms.Api.Management.Filters;
 using Umbraco.Cms.Core.Models;
 using Umbraco.Cms.Core.Services;
-using Umbraco.Cms.Infrastructure.Persistence;
-using Umbraco.Cms.Infrastructure.Persistence.DatabaseAnnotations;
-using Umbraco.Cms.Infrastructure.Persistence.DatabaseModelDefinitions;
-using Umbraco.Cms.Infrastructure.Persistence.Dtos;
 using Umbraco.Cms.Web.Common.Authorization;
-using Umbraco.Extensions;
 
 namespace jcdcdev.Umbraco.GroupsToTabs.Web;
 
@@ -24,7 +17,6 @@ namespace jcdcdev.Umbraco.GroupsToTabs.Web;
 [JsonOptionsName(global::Umbraco.Cms.Core.Constants.JsonOptionsNames.BackOffice)]
 [ApiController]
 [Authorize(Policy = AuthorizationPolicies.BackOfficeAccess)]
-[AppendEventMessages]
 [Produces("application/json")]
 public class GroupsToTabsController(
     ILogger<GroupsToTabsController> logger,

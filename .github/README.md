@@ -11,28 +11,10 @@ A simple Umbraco package that converts content type groups into tabs in the Umbr
 > [!NOTE]
 > This package was created to celebrate [Hacktoberfest](https://umbraco.com/blog/join-us-for-umbraco-hacktoberfest-2024/) 2024! 🎉
 
-> [!IMPORTANT]
-> Version 15 will only receive security updates and no new features.
+> [!WARNING]
+> Version 15 is no longer supported and is End of Life (EOL).
 
 > Please review the [security policy](https://github.com/jcdcdev/jcdcdev.Umbraco.GroupsToTabs?tab=security-ov-file#supported-versions) for more information.
-
-## Quick Start
-
-### Install Package
-
-```csharp
-dotnet add package jcdcdev.Umbraco.GroupsToTabs 
-```
-
-### Go to the Settings section in the Umbraco backoffice
-
-- Click on the "Groups to Tabs" section
-- Select the type you want to convert
-- Click on the "Convert" button
-- Done! 🎉
-
-
-
 
 ## Contributing
 

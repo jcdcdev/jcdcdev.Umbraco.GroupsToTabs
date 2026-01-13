@@ -15,7 +15,7 @@ A simple Umbraco package that converts content type groups into tabs in the Umbr
 
 ### Install Package
 
-```csharp
+```powershell
 dotnet add package jcdcdev.Umbraco.GroupsToTabs 
 ```
 

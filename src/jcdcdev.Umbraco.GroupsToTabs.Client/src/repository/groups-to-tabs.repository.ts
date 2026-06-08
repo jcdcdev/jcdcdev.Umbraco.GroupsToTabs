@@ -1,7 +1,7 @@
 ﻿import {UmbControllerBase} from "@umbraco-cms/backoffice/class-api";
 import {UmbControllerHost} from "@umbraco-cms/backoffice/controller-api";
 import {IGroupsToTabsDataSource, GroupsToTabsDataSource} from "../datasource/groups-to-tabs.data-source.ts";
-import {type GetUmbracoGroupsToTabsApiV1StartByTypeResponse, GroupsToTabsResponse} from "../api";
+import {type GetStartByTypeResponse, GroupsToTabsResponse} from "../api";
 
 export class GroupsToTabsRepository extends UmbControllerBase {
     #resource: IGroupsToTabsDataSource;
@@ -21,7 +21,7 @@ export class GroupsToTabsRepository extends UmbControllerBase {
 
         }
 
-        const data = result.data as GetUmbracoGroupsToTabsApiV1StartByTypeResponse;
+        const data = result.data as GetStartByTypeResponse;
         if (data.success
         ) {
             return {
